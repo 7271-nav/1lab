@@ -1,0 +1,5 @@
+FROM ubuntu
+COPY file.sh .
+RUN chmod ugo+x file.sh && apt-get update && apt-get -y install imagemagick
+CMD ./file.sh
+
